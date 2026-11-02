@@ -1,0 +1,38 @@
+# PROYECTO DE ARQUITECTURA DE SOFTWARE
+
+## 1. NOMBRE DE PROYECTO
+**QhatuDigital Cusco** — Plataforma Web y Móvil Multi-Mercado con Consolidación de Pedidos y Despacho Inteligente.
+
+---
+
+## 2. INTEGRANTES DEL GRUPO
+* **Rye Gabriel Gregory Paucar Quejia**
+* **Luis Alberto Tecsi Huallpa**
+* **Nelson Luis Pauccara Huillca**
+* **Salome Celeste Ccahua Huamani**
+* **Johan Robinho Quispe Juarez**
+
+---
+
+## 3. INTRODUCCIÓN (¿De qué trata y para qué sirve?)
+* **¿De qué trata?** 
+  Es una plataforma digital (construida con **SvelteKit v5+**, **Tailwind CSS**, **Skeleton UI**, **Capacitor** y **PocketBase v0.39.10**) que reúne en un solo lugar a los principales mercados de abastos de la ciudad del Cusco (como Vinocanchón, Wanchaq, San Pedro, Ttio y Rosaspata). A través de una interfaz inicial minimalista tipo burbuja, el ciudadano puede explorar libremente los productos de múltiples puestos y vendedores, armar un único carrito de compras unificado y pagar mediante billetera digital o contraentrega validada.
+
+* **¿Para qué sirve? (Problema que resuelve):** 
+  Resuelve la pérdida de tiempo, la congestión y el esfuerzo físico de caminar puesto por puesto dentro de mercados de gran extensión. Cuando el usuario confirma su compra (autenticándose con Google OAuth2), el sistema divide automáticamente su pedido y avisa a cada vendedor involucrado. Los vendedores alistan sus productos y los llevan a un **Punto de Acopio Central (Puerta Principal del mercado)**, donde el cliente —o un servicio de delivery como Rappi o flota propia del mercado— recoge todo el pedido consolidado en un solo paso mostrando un comprobante digital con **Código QR de token único**. Además, incorpora un sistema minimalista de calificación por cuestionario cerrado (calidad, peso exacto, higiene y rapidez) libre de spam.
+
+---
+
+## 4. MICROSERVICIOS A UTILIZAR
+El sistema implementa una arquitectura basada en un núcleo BaaS/Core y microservicios satélite especializados que se comunican mediante eventos y APIs REST/Webhooks:
+
+1. **Servicio Core de Catálogo, Usuarios y Sub-Órdenes (`pb-core-service` - PocketBase v0.39.10):**
+   * Gestiona el catálogo público de mercados, puestos y productos, la autenticación con Google OAuth2, la división de una orden global en sub-órdenes por puesto en tiempo real (SSE) y las cuentas CMS de los vendedores.
+2. **Microservicio de Identidad Móvil y Antifraude (`ms-auth-trust`):**
+   * Evalúa la confiabilidad del comprador (`Trust Score`) para habilitar la modalidad de *"Pago en mercado"*. Verifica mediante `@capacitor/device` el identificador único de hardware (`Android_ID` / `iOS UUID`) para evitar falsas compras y gestiona la validación por **SMS (OTP)** obligatoria en la primera compra.
+3. **Microservicio de Pagos y Firma de Comprobantes QR (`ms-payments-qr`):**
+   * Procesa la validación de pagos por billeteras digitales y genera el comprobante digital cifrado con el **Código QR de Token Único**, el cual se valida en la puerta principal del mercado al entregar los productos al cliente o al repartidor.
+4. **Microservicio de Despacho y Logística (`ms-logistics-dispatch`):**
+   * Coordina el estado de recepción de bolsas en el punto de acopio (Puerta Principal) e integra los adaptadores de envío tanto para el servicio de delivery propio de cada mercado como para plataformas externas (**Rappi**).
+5. **Microservicio de Reputación y Métricas de Vendedores (`ms-ratings-aggregator`):**
+   * Procesa las respuestas del cuestionario minimalista cerrado (sin texto libre) tras cada entrega exitosa y recalcula en tiempo real los indicadores de calidad, peso exacto y rapidez de cada puesto.
