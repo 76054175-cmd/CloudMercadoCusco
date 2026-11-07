@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+@import '@skeletonlabs/skeleton';
+@import '@skeletonlabs/skeleton/themes/sahara';
+
+@keyframes qhatu-float {
+	0%,
+	100% {
+		transform: translateY(0) scale(1);
+	}
+	50% {
+		transform: translateY(-14px) scale(1.03);
+	}
+}
+
+.bubble-float {
+	animation: qhatu-float var(--float-duration, 6s) ease-in-out infinite;
+	animation-delay: var(--float-delay, 0s);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.bubble-float {
+		animation: none;
+	}
+}

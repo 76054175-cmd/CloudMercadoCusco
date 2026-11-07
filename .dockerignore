@@ -1,0 +1,9 @@
+**/node_modules
+**/.svelte-kit
+apps/web/build
+backend/pb_data
+.git
+.env
+tokenTemporal.txt
+*.token
+arquitectura.md

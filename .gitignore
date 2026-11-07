@@ -1,0 +1,25 @@
+# Secretos
+tokenTemporal.txt
+*.token
+.env
+.env.*
+!.env.example
+
+# Documento interno (no se publica)
+arquitectura.md
+
+# Backend
+backend/pb_data/
+backend/core/web/dist/*
+!backend/core/web/dist/.gitkeep
+backend/**/__debug_bin*
+
+# Frontend
+node_modules/
+.pnpm-store/
+apps/web/.svelte-kit/
+apps/web/build/
+
+# Sistema / editor
+.DS_Store
+Thumbs.db

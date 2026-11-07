@@ -1,0 +1,10 @@
+go 1.27
+
+use (
+	./core
+	./shared
+	./ms-auth-trust
+	./ms-payments-qr
+	./ms-logistics-dispatch
+	./ms-ratings-aggregator
+)

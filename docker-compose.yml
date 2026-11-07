@@ -1,0 +1,82 @@
+# Entorno de desarrollo. No necesitas Go ni Node instalados: todo corre en contenedores.
+#   make dev        -> levanta todo
+#   http://localhost:5173      web (Vite, recarga en caliente)
+#   http://localhost:8090/_/   panel de PocketBase
+name: qhatudigital
+
+x-go-service: &go-service
+  image: golang:1.27-alpine
+  working_dir: /app/backend
+  env_file: .env
+  volumes:
+    - ./:/app
+    - go-mod:/go/pkg/mod
+    - go-build:/root/.cache/go-build
+  restart: unless-stopped
+
+services:
+  core:
+    <<: *go-service
+    command: go run ./core serve --http=0.0.0.0:8090 --dir=/pb_data
+    environment:
+      APP_ENV: dev
+      SEED_ON_START: "true"
+      QHATU_SEED_DIR: /app/data/seed
+    ports:
+      - "8090:8090"
+    volumes:
+      - ./:/app
+      - go-mod:/go/pkg/mod
+      - go-build:/root/.cache/go-build
+      - pb-data:/pb_data
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:8090/api/qhatu/health"]
+      interval: 10s
+      timeout: 3s
+      retries: 30
+      start_period: 120s
+
+  web:
+    image: node:24-bookworm-slim
+    working_dir: /app/apps/web
+    user: "${UID:-1000}:${GID:-1000}"
+    command: sh -c "corepack pnpm install --frozen-lockfile && corepack pnpm dev --host 0.0.0.0 --port 5173"
+    environment:
+      HOME: /tmp
+      COREPACK_HOME: /tmp/corepack
+      COREPACK_ENABLE_DOWNLOAD_PROMPT: "0"
+      CI: "true"                                  # pnpm sin preguntas interactivas
+      npm_config_store_dir: /app/.pnpm-store      # caché de paquetes persistente (ignorada por git)
+      PB_PROXY_TARGET: http://core:8090
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./:/app
+    depends_on:
+      - core
+    restart: unless-stopped
+
+  ms-auth-trust:
+    <<: *go-service
+    command: go run ./ms-auth-trust
+    environment: { ADDR: ":3001" }
+
+  ms-payments-qr:
+    <<: *go-service
+    command: go run ./ms-payments-qr
+    environment: { ADDR: ":3002" }
+
+  ms-logistics-dispatch:
+    <<: *go-service
+    command: go run ./ms-logistics-dispatch
+    environment: { ADDR: ":3003" }
+
+  ms-ratings-aggregator:
+    <<: *go-service
+    command: go run ./ms-ratings-aggregator
+    environment: { ADDR: ":3004" }
+
+volumes:
+  go-mod:
+  go-build:
+  pb-data:

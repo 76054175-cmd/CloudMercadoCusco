@@ -1,0 +1,13 @@
+[
+  { "email": "admin@qhatu.test", "name": "Admin Qhatu", "role": "admin", "market": "", "phone": "", "sms_verified": true },
+  { "email": "juana@qhatu.test", "name": "Juana Quispe", "role": "vendor", "market": "vinocanchon", "phone": "", "sms_verified": true },
+  { "email": "lacteos@qhatu.test", "name": "Lácteos Chumbivilcas", "role": "vendor", "market": "vinocanchon", "phone": "", "sms_verified": true },
+  { "email": "mario@qhatu.test", "name": "Mario Huamán", "role": "vendor", "market": "vinocanchon", "phone": "", "sms_verified": true },
+  { "email": "frutas@qhatu.test", "name": "Frutas Selva", "role": "vendor", "market": "wanchaq", "phone": "", "sms_verified": true },
+  { "email": "rosa@qhatu.test", "name": "Rosa Mamani", "role": "vendor", "market": "wanchaq", "phone": "", "sms_verified": true },
+  { "email": "inca@qhatu.test", "name": "Abarrotes El Inca", "role": "vendor", "market": "wanchaq", "phone": "", "sms_verified": true },
+  { "email": "acopio.vin@qhatu.test", "name": "Acopio Vinocanchón", "role": "hub_operator", "market": "vinocanchon", "phone": "", "sms_verified": true },
+  { "email": "acopio.wan@qhatu.test", "name": "Acopio Wanchaq", "role": "hub_operator", "market": "wanchaq", "phone": "", "sms_verified": true },
+  { "email": "cliente1@qhatu.test", "name": "Cliente Verificado", "role": "customer", "market": "", "phone": "+51900000001", "sms_verified": true },
+  { "email": "cliente2@qhatu.test", "name": "Cliente Nuevo", "role": "customer", "market": "", "phone": "", "sms_verified": false }
+]

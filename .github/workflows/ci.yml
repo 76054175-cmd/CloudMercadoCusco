@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.27"
+          cache-dependency-path: backend/**/go.sum
+      - name: go vet
+        working-directory: backend
+        run: go vet ./core/... ./shared/... ./ms-auth-trust ./ms-payments-qr ./ms-logistics-dispatch ./ms-ratings-aggregator
+      - name: Validar data/seed (dry-run)
+        working-directory: backend
+        env:
+          APP_ENV: dev
+          SEED_DEV_PASSWORD: ci-check-only
+          QHATU_SEED_DIR: ${{ github.workspace }}/data/seed
+        run: go run ./core seed --dry-run --dir="$RUNNER_TEMP/pb_check"
+      - name: Imágenes ≤ 1 MB
+        run: |
+          big=$(find data/seed/images -type f -size +1024k)
+          if [ -n "$big" ]; then echo "Imágenes mayores a 1 MB:"; echo "$big"; exit 1; fi
+
+  web:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: corepack enable && pnpm install --frozen-lockfile
+      - run: pnpm check
+      - run: pnpm build

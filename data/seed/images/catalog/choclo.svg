@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Choclo">
+  <rect width="400" height="400" fill="#eef3dc"/>
+  <path d="M120 300 Q200 230 170 90 Q130 170 120 300Z" fill="#7aa33b"/><path d="M280 300 Q200 230 230 90 Q270 170 280 300Z" fill="#6a9132"/><ellipse cx="200" cy="175" rx="52" ry="115" fill="#f3e3a8"/><g fill="#e9d38a"><circle cx="185" cy="110" r="10"/><circle cx="215" cy="110" r="10"/><circle cx="185" cy="140" r="10"/><circle cx="215" cy="140" r="10"/><circle cx="185" cy="170" r="10"/><circle cx="215" cy="170" r="10"/><circle cx="185" cy="200" r="10"/><circle cx="215" cy="200" r="10"/><circle cx="185" cy="230" r="10"/><circle cx="215" cy="230" r="10"/></g>
+  <text x="200" y="360" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="600" fill="#3b2f2f">Choclo</text>
+</svg>

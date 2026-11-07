@@ -45,4 +45,41 @@ El sistema implementa una arquitectura basada en un núcleo BaaS/Core y microser
 * Los vendedores pagan el alquiler de su puesto en un sistema externo; en esta plataforma el **administrador** los habilita o deshabilita.
 * Los pagos de los clientes ingresan primero a la **cuenta central de cada mercado**, que luego liquida a cada vendedor según el reporte de ventas por puesto.
 * Los parámetros de negocio (trust score, tiempos, montos) son configurables desde el panel de PocketBase para su ajuste fino manual.
-* El detalle técnico completo para la construcción está en [arquitectura.md](arquitectura.md).
+
+---
+
+## 6. CÓMO EJECUTAR EL PROYECTO
+Solo se necesita **Git**, **Docker** (con Docker Compose) y **make**; no hace falta instalar Go ni Node.
+
+```bash
+git clone https://github.com/76054175-cmd/CloudMercadoCusco.git
+cd CloudMercadoCusco
+make dev
+```
+
+| URL | Qué es |
+|---|---|
+| http://localhost:5173 | Aplicación web (desarrollo, recarga en caliente) |
+| http://localhost:8090/_/ | Panel de administración de PocketBase |
+
+La primera ejecución carga automáticamente los mercados, puestos, productos y usuarios de prueba desde `data/seed/`. Credenciales de desarrollo en `.env` (se crea desde `.env.example`). `make help` lista todos los comandos.
+
+**Producción:** `make build` genera una imagen Docker de ~43 MB con un único binario Go que sirve la web y la API.
+
+## 7. ESTRUCTURA DEL REPOSITORIO
+| Carpeta | Contenido |
+|---|---|
+| `apps/web/` | Frontend SvelteKit 3 (Svelte 5 Runes) + Tailwind CSS 4 + Skeleton UI 5, compilado como sitio estático |
+| `backend/core/` | `pb-core-service`: PocketBase v0.41.1 como librería Go (esquema, reglas, hooks y web embebida) |
+| `backend/ms-*/` | Microservicios Go (simulados en la v1) |
+| `data/seed/` | Catálogo base, datos de prueba e imágenes, en JSON |
+
+## 8. CÓMO COLABORAR
+Todos los integrantes pueden subir **imágenes y datos** (mercados, puestos, productos) editando `data/seed/`, y código, mediante ramas y Pull Requests. La guía paso a paso está en [CONTRIBUTING.md](CONTRIBUTING.md) y el formato de los datos en [data/seed/README.md](data/seed/README.md).
+
+## 9. ESTADO
+- [x] **Fase 1:** cimientos, esquema PocketBase, datos de prueba y selector de mercados tipo burbuja.
+- [ ] Fase 2: catálogo con filtros y carrito multi-mercado.
+- [ ] Fase 3: login con Google, antifraude y checkout con QR.
+- [ ] Fase 4: módulo de vendedor, acopio en puerta y administración.
+- [ ] Fase 5: calificaciones.

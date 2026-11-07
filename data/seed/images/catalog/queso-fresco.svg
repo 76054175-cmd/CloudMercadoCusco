@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Queso fresco">
+  <rect width="400" height="400" fill="#f1efe6"/>
+  <ellipse cx="200" cy="230" rx="130" ry="45" fill="#e3dcc4"/><rect x="70" y="150" width="260" height="80" fill="#fbf7ea"/><ellipse cx="200" cy="150" rx="130" ry="45" fill="#fffdf4" stroke="#e3dcc4" stroke-width="4"/>
+  <text x="200" y="360" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="600" fill="#3b2f2f">Queso fresco</text>
+</svg>

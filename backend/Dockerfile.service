@@ -1,0 +1,11 @@
+# Imagen de producción de un microservicio Go. Uso:
+#   docker build -f backend/Dockerfile.service --build-arg SERVICE=ms-auth-trust backend
+FROM golang:1.27-alpine AS build
+ARG SERVICE
+WORKDIR /src
+COPY . .
+RUN CGO_ENABLED=0 go build -trimpath -ldflags="-s -w" -o /out/service ./${SERVICE}
+
+FROM gcr.io/distroless/static-debian12:nonroot
+COPY --from=build /out/service /service
+ENTRYPOINT ["/service"]
