@@ -83,6 +83,24 @@ func registerSeed(app *pocketbase.PocketBase, isDev bool) {
 	}
 	cmd.Flags().BoolVar(&update, "update", false, "sobrescribe registros existentes con los valores del JSON")
 	cmd.Flags().BoolVar(&dryRun, "dry-run", false, "solo valida los archivos, no guarda nada")
+
+	export := &cobra.Command{
+		Use:          "export",
+		Short:        "Escribe la base actual (lo cargado en /_/) en data/seed: JSON + imágenes",
+		SilenceUsage: true,
+		RunE: func(_ *cobra.Command, _ []string) error {
+			if err := app.Bootstrap(); err != nil {
+				return err
+			}
+			rep, err := seed.Export(app, seed.ExportOptions{Dir: seedOptions(isDev).Dir})
+			if err != nil {
+				return err
+			}
+			log.Printf("seed export OK: %s", rep)
+			return nil
+		},
+	}
+	cmd.AddCommand(export)
 	app.RootCmd.AddCommand(cmd)
 
 	if env("SEED_ON_START", "false") != "true" {

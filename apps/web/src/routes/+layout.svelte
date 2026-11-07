@@ -2,6 +2,8 @@
 	import './layout.css';
 	import favicon from '#lib/assets/favicon.svg';
 	import { resolve } from '$app/paths';
+	import { cart } from '#lib/cart.svelte.js';
+	import { formatPEN } from '#lib/constants.js';
 	import type { LayoutProps } from './$types';
 
 	let { children }: LayoutProps = $props();
@@ -18,7 +20,19 @@
 				<span class="text-2xl" aria-hidden="true">🧺</span>
 				<span class="text-lg">Qhatu<span class="text-primary-600-400">Digital</span></span>
 			</a>
-			<span class="text-sm opacity-70">Mercados del Cusco</span>
+			<a
+				href={resolve('/carrito')}
+				class="btn btn-sm preset-tonal-primary"
+				aria-label="Carrito: {cart.count} productos, {formatPEN(cart.total)}"
+			>
+				<span aria-hidden="true">🧺</span>
+				{#if cart.count > 0}
+					<span class="badge-icon preset-filled-primary-500 tabular-nums">{cart.count}</span>
+					<span class="hidden sm:inline">{formatPEN(cart.total)}</span>
+				{:else}
+					<span>Carrito</span>
+				{/if}
+			</a>
 		</div>
 	</header>
 

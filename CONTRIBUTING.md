@@ -43,7 +43,8 @@ Prefijos de rama: `datos/` (imágenes y JSON), `feat/` (funcionalidad), `fix/` (
 Todo está explicado en [`data/seed/README.md`](data/seed/README.md). Resumen:
 
 1. Imágenes en `data/seed/images/<markets|catalog|products>/`.
-2. Datos en los JSON de `data/seed/`.
+2. Datos en los JSON de `data/seed/`, **o** cárgalos desde el panel local `/_/` y ejecuta
+   `make seed-export` para pasarlos a `data/seed/`.
 3. `make seed-check` para validar y `make seed` para verlo en tu web local.
 
 > **Datos reales de producción** (fotos definitivas, vendedores reales) se cargan desde el panel

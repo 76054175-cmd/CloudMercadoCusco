@@ -79,7 +79,8 @@ Todos los integrantes pueden subir **imágenes y datos** (mercados, puestos, pro
 
 ## 9. ESTADO
 - [x] **Fase 1:** cimientos, esquema PocketBase, datos de prueba y selector de mercados tipo burbuja.
-- [ ] Fase 2: catálogo con filtros y carrito multi-mercado.
+- [x] **Fase 2:** catálogo con filtros y buscador, comparación entre puestos y carrito multi-mercado.
+- [x] `make seed-export`: lo cargado en el panel `/_/` se pasa a `data/seed/` para subirlo al repo.
 - [ ] Fase 3: login con Google, antifraude y checkout con QR.
 - [ ] Fase 4: módulo de vendedor, acopio en puerta y administración.
 - [ ] Fase 5: calificaciones.

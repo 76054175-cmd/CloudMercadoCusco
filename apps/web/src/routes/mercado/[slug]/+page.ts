@@ -13,7 +13,7 @@ export const load: PageLoad = async ({ params }) => {
 		error(404, 'Mercado no encontrado');
 	}
 
-	const [stalls, products] = await Promise.all([
+	const [stalls, products, offers] = await Promise.all([
 		pb.collection('stalls').getFullList<Stall>({
 			filter: pb.filter('market_id = {:id} && active = true', { id: market.id }),
 			sort: 'name'
@@ -21,9 +21,26 @@ export const load: PageLoad = async ({ params }) => {
 		pb.collection('products').getFullList<Product>({
 			filter: pb.filter('stall_id.market_id = {:id} && stall_id.active = true', { id: market.id }),
 			expand: 'stall_id,catalog_item_id',
-			sort: 'name'
+			sort: '-in_stock,name'
+		}),
+		// Para "Ver en otros puestos": qué puestos activos (de cualquier mercado) ofrecen cada catalog_item.
+		pb.collection('products').getFullList<Pick<Product, 'catalog_item_id' | 'stall_id'>>({
+			filter: 'stall_id.active = true && stall_id.market_id.active = true && catalog_item_id != ""',
+			fields: 'catalog_item_id,stall_id'
 		})
 	]);
 
-	return { market, stalls, products };
+	const stallsByItem = new Map<string, Set<string>>();
+	for (const o of offers) {
+		const set = stallsByItem.get(o.catalog_item_id) ?? new Set<string>();
+		set.add(o.stall_id);
+		stallsByItem.set(o.catalog_item_id, set);
+	}
+	/** Puestos distintos a stallId que venden el mismo catalog_item. */
+	const otherStalls = (catalogItemId: string, stallId: string) => {
+		const set = stallsByItem.get(catalogItemId);
+		return set ? set.size - (set.has(stallId) ? 1 : 0) : 0;
+	};
+
+	return { market, stalls, products, otherStalls };
 };

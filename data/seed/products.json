@@ -1,202 +1,22 @@
 [
-  {
-    "market": "vinocanchon",
-    "stall_number": "Pabellón A - Puesto 12",
-    "name": "Papa amarilla",
-    "catalog_item": "Papa amarilla",
-    "unit_type": "kg",
-    "price": 3.5,
-    "in_stock": true,
-    "image": ""
-  },
-  {
-    "market": "vinocanchon",
-    "stall_number": "Pabellón A - Puesto 12",
-    "name": "Choclo cusqueño",
-    "catalog_item": "Choclo",
-    "unit_type": "unidad",
-    "price": 1.5,
-    "in_stock": true,
-    "image": ""
-  },
-  {
-    "market": "vinocanchon",
-    "stall_number": "Pabellón A - Puesto 12",
-    "name": "Huacatay",
-    "catalog_item": "Huacatay",
-    "unit_type": "manojo",
-    "price": 1.0,
-    "in_stock": true,
-    "image": ""
-  },
-  {
-    "market": "vinocanchon",
-    "stall_number": "Pabellón A - Puesto 12",
-    "name": "Cebolla roja",
-    "catalog_item": "Cebolla roja",
-    "unit_type": "kg",
-    "price": 2.8,
-    "in_stock": true,
-    "image": ""
-  },
-  {
-    "market": "vinocanchon",
-    "stall_number": "Pabellón C - Puesto 05",
-    "name": "Queso fresco de Chumbivilcas",
-    "catalog_item": "Queso fresco",
-    "unit_type": "kg",
-    "price": 22.0,
-    "in_stock": true,
-    "image": ""
-  },
-  {
-    "market": "vinocanchon",
-    "stall_number": "Pabellón C - Puesto 05",
-    "name": "Queso fresco de Chumbivilcas",
-    "catalog_item": "Queso fresco",
-    "unit_type": "medio_kg",
-    "price": 11.5,
-    "in_stock": true,
-    "image": ""
-  },
-  {
-    "market": "vinocanchon",
-    "stall_number": "Pabellón C - Puesto 05",
-    "name": "Leche fresca (1 L)",
-    "catalog_item": "",
-    "unit_type": "unidad",
-    "price": 4.5,
-    "in_stock": true,
-    "image": ""
-  },
-  {
-    "market": "vinocanchon",
-    "stall_number": "Pabellón B - Puesto 42",
-    "name": "Pollo entero",
-    "catalog_item": "Pollo entero",
-    "unit_type": "unidad",
-    "price": 28.0,
-    "in_stock": true,
-    "image": ""
-  },
-  {
-    "market": "vinocanchon",
-    "stall_number": "Pabellón B - Puesto 42",
-    "name": "Lomo de res",
-    "catalog_item": "Lomo de res",
-    "unit_type": "kg",
-    "price": 38.0,
-    "in_stock": true,
-    "image": ""
-  },
-  {
-    "market": "vinocanchon",
-    "stall_number": "Pabellón B - Puesto 42",
-    "name": "Cuy beneficiado",
-    "catalog_item": "",
-    "unit_type": "unidad",
-    "price": 35.0,
-    "in_stock": true,
-    "image": ""
-  },
-  {
-    "market": "wanchaq",
-    "stall_number": "Nave 1 - Puesto 08",
-    "name": "Plátano de isla",
-    "catalog_item": "Plátano de isla",
-    "unit_type": "manojo",
-    "price": 5.0,
-    "in_stock": true,
-    "image": ""
-  },
-  {
-    "market": "wanchaq",
-    "stall_number": "Nave 1 - Puesto 08",
-    "name": "Palta fuerte",
-    "catalog_item": "Palta",
-    "unit_type": "kg",
-    "price": 7.5,
-    "in_stock": true,
-    "image": ""
-  },
-  {
-    "market": "wanchaq",
-    "stall_number": "Nave 1 - Puesto 08",
-    "name": "Granadilla",
-    "catalog_item": "",
-    "unit_type": "unidad",
-    "price": 0.8,
-    "in_stock": false,
-    "image": ""
-  },
-  {
-    "market": "wanchaq",
-    "stall_number": "Nave 2 - Puesto 21",
-    "name": "Papa amarilla",
-    "catalog_item": "Papa amarilla",
-    "unit_type": "kg",
-    "price": 3.2,
-    "in_stock": true,
-    "image": ""
-  },
-  {
-    "market": "wanchaq",
-    "stall_number": "Nave 2 - Puesto 21",
-    "name": "Cebolla roja",
-    "catalog_item": "Cebolla roja",
-    "unit_type": "kg",
-    "price": 2.5,
-    "in_stock": true,
-    "image": ""
-  },
-  {
-    "market": "wanchaq",
-    "stall_number": "Nave 2 - Puesto 21",
-    "name": "Zanahoria",
-    "catalog_item": "Zanahoria",
-    "unit_type": "atado",
-    "price": 2.0,
-    "in_stock": true,
-    "image": ""
-  },
-  {
-    "market": "wanchaq",
-    "stall_number": "Nave 2 - Puesto 21",
-    "name": "Choclo cusqueño",
-    "catalog_item": "Choclo",
-    "unit_type": "unidad",
-    "price": 1.3,
-    "in_stock": true,
-    "image": ""
-  },
-  {
-    "market": "wanchaq",
-    "stall_number": "Nave 3 - Puesto 03",
-    "name": "Arroz extra",
-    "catalog_item": "Arroz",
-    "unit_type": "kg",
-    "price": 4.2,
-    "in_stock": true,
-    "image": ""
-  },
-  {
-    "market": "wanchaq",
-    "stall_number": "Nave 3 - Puesto 03",
-    "name": "Quinua blanca",
-    "catalog_item": "Quinua",
-    "unit_type": "kg",
-    "price": 9.0,
-    "in_stock": true,
-    "image": ""
-  },
-  {
-    "market": "wanchaq",
-    "stall_number": "Nave 3 - Puesto 03",
-    "name": "Azúcar rubia",
-    "catalog_item": "",
-    "unit_type": "kg",
-    "price": 3.8,
-    "in_stock": true,
-    "image": ""
-  }
+  { "market": "vinocanchon", "stall_number": "Pabellón A - Puesto 12", "name": "Cebolla roja", "catalog_item": "Cebolla roja", "unit_type": "kg", "price": 2.8, "in_stock": true, "image": "" },
+  { "market": "vinocanchon", "stall_number": "Pabellón A - Puesto 12", "name": "Choclo cusqueño", "catalog_item": "Choclo", "unit_type": "unidad", "price": 1.5, "in_stock": true, "image": "" },
+  { "market": "vinocanchon", "stall_number": "Pabellón A - Puesto 12", "name": "Huacatay", "catalog_item": "Huacatay", "unit_type": "manojo", "price": 1, "in_stock": true, "image": "" },
+  { "market": "vinocanchon", "stall_number": "Pabellón A - Puesto 12", "name": "Papa amarilla", "catalog_item": "Papa amarilla", "unit_type": "kg", "price": 3.5, "in_stock": true, "image": "" },
+  { "market": "vinocanchon", "stall_number": "Pabellón B - Puesto 42", "name": "Cuy beneficiado", "catalog_item": "", "unit_type": "unidad", "price": 35, "in_stock": true, "image": "" },
+  { "market": "vinocanchon", "stall_number": "Pabellón B - Puesto 42", "name": "Lomo de res", "catalog_item": "Lomo de res", "unit_type": "kg", "price": 38, "in_stock": true, "image": "" },
+  { "market": "vinocanchon", "stall_number": "Pabellón B - Puesto 42", "name": "Pollo entero", "catalog_item": "Pollo entero", "unit_type": "unidad", "price": 28, "in_stock": true, "image": "" },
+  { "market": "vinocanchon", "stall_number": "Pabellón C - Puesto 05", "name": "Leche fresca (1 L)", "catalog_item": "", "unit_type": "unidad", "price": 4.5, "in_stock": true, "image": "" },
+  { "market": "vinocanchon", "stall_number": "Pabellón C - Puesto 05", "name": "Queso fresco de Chumbivilcas", "catalog_item": "Queso fresco", "unit_type": "kg", "price": 22, "in_stock": true, "image": "" },
+  { "market": "vinocanchon", "stall_number": "Pabellón C - Puesto 05", "name": "Queso fresco de Chumbivilcas", "catalog_item": "Queso fresco", "unit_type": "medio_kg", "price": 11.5, "in_stock": true, "image": "" },
+  { "market": "wanchaq", "stall_number": "Nave 1 - Puesto 08", "name": "Granadilla", "catalog_item": "", "unit_type": "unidad", "price": 0.8, "in_stock": false, "image": "" },
+  { "market": "wanchaq", "stall_number": "Nave 1 - Puesto 08", "name": "Palta fuerte", "catalog_item": "Palta", "unit_type": "kg", "price": 7.5, "in_stock": true, "image": "" },
+  { "market": "wanchaq", "stall_number": "Nave 1 - Puesto 08", "name": "Plátano de isla", "catalog_item": "Plátano de isla", "unit_type": "manojo", "price": 5, "in_stock": true, "image": "" },
+  { "market": "wanchaq", "stall_number": "Nave 2 - Puesto 21", "name": "Cebolla roja", "catalog_item": "Cebolla roja", "unit_type": "kg", "price": 2.5, "in_stock": true, "image": "" },
+  { "market": "wanchaq", "stall_number": "Nave 2 - Puesto 21", "name": "Choclo cusqueño", "catalog_item": "Choclo", "unit_type": "unidad", "price": 1.3, "in_stock": true, "image": "" },
+  { "market": "wanchaq", "stall_number": "Nave 2 - Puesto 21", "name": "Papa amarilla", "catalog_item": "Papa amarilla", "unit_type": "kg", "price": 3.2, "in_stock": true, "image": "" },
+  { "market": "wanchaq", "stall_number": "Nave 2 - Puesto 21", "name": "Zanahoria", "catalog_item": "Zanahoria", "unit_type": "atado", "price": 2, "in_stock": true, "image": "" },
+  { "market": "wanchaq", "stall_number": "Nave 3 - Puesto 03", "name": "Arroz extra", "catalog_item": "Arroz", "unit_type": "kg", "price": 4.2, "in_stock": true, "image": "" },
+  { "market": "wanchaq", "stall_number": "Nave 3 - Puesto 03", "name": "Azúcar rubia", "catalog_item": "", "unit_type": "kg", "price": 3.8, "in_stock": true, "image": "" },
+  { "market": "wanchaq", "stall_number": "Nave 3 - Puesto 03", "name": "Quinua blanca", "catalog_item": "Quinua", "unit_type": "kg", "price": 9, "in_stock": true, "image": "" }
 ]

@@ -1,7 +1,7 @@
 [
   { "market": "vinocanchon", "stall_number": "Pabellón A - Puesto 12", "name": "Puesto Doña Juana - Verduras", "section": "verduras", "owner_email": "juana@qhatu.test", "active": true, "enabled_until": "" },
-  { "market": "vinocanchon", "stall_number": "Pabellón C - Puesto 05", "name": "Lácteos Chumbivilcas", "section": "quesos_lacteos", "owner_email": "lacteos@qhatu.test", "active": true, "enabled_until": "" },
   { "market": "vinocanchon", "stall_number": "Pabellón B - Puesto 42", "name": "Carnes Don Mario", "section": "carnes_aves", "owner_email": "mario@qhatu.test", "active": true, "enabled_until": "" },
+  { "market": "vinocanchon", "stall_number": "Pabellón C - Puesto 05", "name": "Lácteos Chumbivilcas", "section": "quesos_lacteos", "owner_email": "lacteos@qhatu.test", "active": true, "enabled_until": "" },
   { "market": "wanchaq", "stall_number": "Nave 1 - Puesto 08", "name": "Frutas Selva Quillabamba", "section": "frutas", "owner_email": "frutas@qhatu.test", "active": true, "enabled_until": "" },
   { "market": "wanchaq", "stall_number": "Nave 2 - Puesto 21", "name": "Verduras Mamá Rosa", "section": "verduras", "owner_email": "rosa@qhatu.test", "active": true, "enabled_until": "" },
   { "market": "wanchaq", "stall_number": "Nave 3 - Puesto 03", "name": "Abarrotes El Inca", "section": "abarrotes", "owner_email": "inca@qhatu.test", "active": true, "enabled_until": "" }

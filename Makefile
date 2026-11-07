@@ -9,7 +9,7 @@ GO_RUN := docker run --rm -v "$(CURDIR)":/app -v qhatudigital_go-mod:/go/pkg/mod
 NODE_RUN := docker run --rm -u $(UID):$(GID) -e HOME=/tmp -e COREPACK_HOME=/tmp/corepack \
 	-e COREPACK_ENABLE_DOWNLOAD_PROMPT=0 -e CI=true -e npm_config_store_dir=/app/.pnpm-store -v "$(CURDIR)":/app -w /app/apps/web node:24-bookworm-slim
 
-.PHONY: help env dev down logs reset seed seed-check seed-update tidy check build
+.PHONY: help env dev down logs reset seed seed-check seed-update seed-export tidy check build
 
 help: ## Muestra esta ayuda
 	@grep -E '^[a-z-]+:.*##' $(MAKEFILE_LIST) | awk -F':.*## ' '{printf "  make %-12s %s\n", $$1, $$2}'
@@ -31,13 +31,17 @@ reset: ## Borra la base de datos de desarrollo (pb_data) y vuelve a sembrar al i
 	docker volume rm qhatudigital_pb-data || true
 
 seed: ## Importa data/seed en la base de desarrollo (solo crea lo que falta)
-	docker compose exec core go run ./core seed --dir=/pb_data
+	docker compose exec core go run ./core seed --dev=false --dir=/pb_data
 
 seed-update: ## Importa data/seed SOBRESCRIBIENDO registros existentes
-	docker compose exec core go run ./core seed --dir=/pb_data --update
+	docker compose exec core go run ./core seed --dev=false --dir=/pb_data --update
+
+seed-export: ## Exporta lo cargado en el panel /_/ local a data/seed (JSON + imágenes)
+	docker compose exec core sh -c 'go run ./core seed export --dev=false --dir=/pb_data && chown -R $(UID):$(GID) /app/data/seed'
+	@echo "Revisa los cambios con: git status data/seed && git diff data/seed"
 
 seed-check: env ## Valida data/seed sin guardar (usa una base temporal)
-	$(GO_RUN) sh -c 'APP_ENV=dev SEED_DEV_PASSWORD=seed-check-only QHATU_SEED_DIR=/app/data/seed go run ./core seed --dry-run --dir=/tmp/pb_check'
+	$(GO_RUN) sh -c 'APP_ENV=dev SEED_DEV_PASSWORD=seed-check-only QHATU_SEED_DIR=/app/data/seed go run ./core seed --dev=false --dry-run --dir=/tmp/pb_check'
 
 tidy: ## go mod tidy en todos los módulos
 	$(GO_RUN) sh -c 'for m in core shared ms-*; do GOWORK=off go mod tidy -C $$m; done; chown -R $(UID):$(GID) /app/backend'

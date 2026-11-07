@@ -1,14 +1,14 @@
 [
-  { "name": "Papa amarilla", "section": "verduras", "default_image": "catalog/papa-amarilla.svg" },
+  { "name": "Arroz", "section": "abarrotes", "default_image": "" },
+  { "name": "Quinua", "section": "abarrotes", "default_image": "" },
+  { "name": "Lomo de res", "section": "carnes_aves", "default_image": "" },
+  { "name": "Pollo entero", "section": "carnes_aves", "default_image": "" },
+  { "name": "Palta", "section": "frutas", "default_image": "" },
+  { "name": "Plátano de isla", "section": "frutas", "default_image": "" },
+  { "name": "Queso fresco", "section": "quesos_lacteos", "default_image": "catalog/queso-fresco.svg" },
   { "name": "Cebolla roja", "section": "verduras", "default_image": "" },
   { "name": "Choclo", "section": "verduras", "default_image": "catalog/choclo.svg" },
   { "name": "Huacatay", "section": "verduras", "default_image": "" },
-  { "name": "Zanahoria", "section": "verduras", "default_image": "" },
-  { "name": "Queso fresco", "section": "quesos_lacteos", "default_image": "catalog/queso-fresco.svg" },
-  { "name": "Pollo entero", "section": "carnes_aves", "default_image": "" },
-  { "name": "Lomo de res", "section": "carnes_aves", "default_image": "" },
-  { "name": "Palta", "section": "frutas", "default_image": "" },
-  { "name": "Plátano de isla", "section": "frutas", "default_image": "" },
-  { "name": "Arroz", "section": "abarrotes", "default_image": "" },
-  { "name": "Quinua", "section": "abarrotes", "default_image": "" }
+  { "name": "Papa amarilla", "section": "verduras", "default_image": "catalog/papa-amarilla.svg" },
+  { "name": "Zanahoria", "section": "verduras", "default_image": "" }
 ]

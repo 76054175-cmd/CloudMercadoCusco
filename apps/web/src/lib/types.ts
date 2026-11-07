@@ -32,6 +32,9 @@ export interface Stall extends RecordModel {
 	section: Section;
 	active: boolean;
 	metrics_summary: MetricsSummary | null;
+	expand?: {
+		market_id?: Market;
+	};
 }
 
 export interface CatalogItem extends RecordModel {
@@ -52,4 +55,9 @@ export interface Product extends RecordModel {
 		stall_id?: Stall;
 		catalog_item_id?: CatalogItem;
 	};
+}
+
+export interface AppSetting extends RecordModel {
+	key: string;
+	value: unknown;
 }

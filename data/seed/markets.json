@@ -1,67 +1,7 @@
 [
-  {
-    "slug": "vinocanchon",
-    "name": "Vinocanchón",
-    "code_prefix": "VIN",
-    "active": true,
-    "hub_location_desc": "Puerta Principal N° 1 - Zona de Acopio",
-    "open_time": "05:00",
-    "close_time": "18:00",
-    "has_own_delivery": true,
-    "delivery_fee": 5,
-    "rappi_enabled": false,
-    "bubble_icon": ""
-  },
-  {
-    "slug": "wanchaq",
-    "name": "Wanchaq",
-    "code_prefix": "WAN",
-    "active": true,
-    "hub_location_desc": "Puerta Principal - Zona de Acopio",
-    "open_time": "06:00",
-    "close_time": "19:00",
-    "has_own_delivery": true,
-    "delivery_fee": 4,
-    "rappi_enabled": true,
-    "bubble_icon": ""
-  },
-  {
-    "slug": "san-pedro",
-    "name": "San Pedro",
-    "code_prefix": "SPE",
-    "active": true,
-    "hub_location_desc": "Puerta Principal - Zona de Acopio",
-    "open_time": "06:00",
-    "close_time": "18:00",
-    "has_own_delivery": false,
-    "delivery_fee": 0,
-    "rappi_enabled": true,
-    "bubble_icon": ""
-  },
-  {
-    "slug": "ttio",
-    "name": "Ttio",
-    "code_prefix": "TTI",
-    "active": true,
-    "hub_location_desc": "Puerta Principal - Zona de Acopio",
-    "open_time": "06:00",
-    "close_time": "18:00",
-    "has_own_delivery": false,
-    "delivery_fee": 0,
-    "rappi_enabled": false,
-    "bubble_icon": ""
-  },
-  {
-    "slug": "rosaspata",
-    "name": "Rosaspata",
-    "code_prefix": "ROS",
-    "active": true,
-    "hub_location_desc": "Puerta Principal - Zona de Acopio",
-    "open_time": "06:00",
-    "close_time": "18:00",
-    "has_own_delivery": false,
-    "delivery_fee": 0,
-    "rappi_enabled": false,
-    "bubble_icon": ""
-  }
+  { "slug": "rosaspata", "name": "Rosaspata", "code_prefix": "ROS", "active": true, "hub_location_desc": "Puerta Principal - Zona de Acopio", "open_time": "06:00", "close_time": "18:00", "has_own_delivery": false, "delivery_fee": 0, "rappi_enabled": false, "bubble_icon": "" },
+  { "slug": "san-pedro", "name": "San Pedro", "code_prefix": "SPE", "active": true, "hub_location_desc": "Puerta Principal - Zona de Acopio", "open_time": "06:00", "close_time": "18:00", "has_own_delivery": false, "delivery_fee": 0, "rappi_enabled": true, "bubble_icon": "" },
+  { "slug": "ttio", "name": "Ttio", "code_prefix": "TTI", "active": true, "hub_location_desc": "Puerta Principal - Zona de Acopio", "open_time": "06:00", "close_time": "18:00", "has_own_delivery": false, "delivery_fee": 0, "rappi_enabled": false, "bubble_icon": "" },
+  { "slug": "vinocanchon", "name": "Vinocanchón", "code_prefix": "VIN", "active": true, "hub_location_desc": "Puerta Principal N° 1 - Zona de Acopio", "open_time": "05:00", "close_time": "18:00", "has_own_delivery": true, "delivery_fee": 5, "rappi_enabled": false, "bubble_icon": "" },
+  { "slug": "wanchaq", "name": "Wanchaq", "code_prefix": "WAN", "active": true, "hub_location_desc": "Puerta Principal - Zona de Acopio", "open_time": "06:00", "close_time": "19:00", "has_own_delivery": true, "delivery_fee": 4, "rappi_enabled": true, "bubble_icon": "" }
 ]
