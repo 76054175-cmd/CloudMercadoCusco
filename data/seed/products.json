@@ -1,6 +1,7 @@
 [
   { "market": "vinocanchon", "stall_number": "Pabellón A - Puesto 12", "name": "Cebolla roja", "catalog_item": "Cebolla roja", "unit_type": "kg", "price": 2.8, "in_stock": true, "image": "" },
   { "market": "vinocanchon", "stall_number": "Pabellón A - Puesto 12", "name": "Choclo cusqueño", "catalog_item": "Choclo", "unit_type": "unidad", "price": 1.5, "in_stock": true, "image": "" },
+  { "market": "vinocanchon", "stall_number": "Pabellón A - Puesto 12", "name": "Espinaca", "catalog_item": "Planta", "unit_type": "manojo", "price": 2, "in_stock": true, "image": "products/vinocanchon-pabellon-a-puesto-12-espinaca-manojo.jpg" },
   { "market": "vinocanchon", "stall_number": "Pabellón A - Puesto 12", "name": "Huacatay", "catalog_item": "Huacatay", "unit_type": "manojo", "price": 1, "in_stock": true, "image": "" },
   { "market": "vinocanchon", "stall_number": "Pabellón A - Puesto 12", "name": "Papa amarilla", "catalog_item": "Papa amarilla", "unit_type": "kg", "price": 3.5, "in_stock": true, "image": "" },
   { "market": "vinocanchon", "stall_number": "Pabellón B - Puesto 42", "name": "Cuy beneficiado", "catalog_item": "", "unit_type": "unidad", "price": 35, "in_stock": true, "image": "" },

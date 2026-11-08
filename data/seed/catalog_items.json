@@ -10,5 +10,6 @@
   { "name": "Choclo", "section": "verduras", "default_image": "catalog/choclo.svg" },
   { "name": "Huacatay", "section": "verduras", "default_image": "" },
   { "name": "Papa amarilla", "section": "verduras", "default_image": "catalog/papa-amarilla.svg" },
+  { "name": "Planta", "section": "verduras", "default_image": "" },
   { "name": "Zanahoria", "section": "verduras", "default_image": "" }
 ]
