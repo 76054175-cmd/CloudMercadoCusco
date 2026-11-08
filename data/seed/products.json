@@ -1,303 +1,273 @@
 
 [
   {
-    "name": "Arroz",
-    "section": "abarrotes",
-    "default_image": ""
+    "market": "vinocanchon",
+    "stall_number": "Pabellón A - Puesto 12",
+    "name": "Papa huayro",
+    "catalog_item": "",
+    "unit_type": "kg",
+    "price": 4.20,
+    "in_stock": true,
+    "image": ""
   },
   {
-    "name": "Quinua",
-    "section": "abarrotes",
-    "default_image": ""
-  },
-  {
-    "name": "Kiwicha",
-    "section": "abarrotes",
-    "default_image": ""
-  },
-  {
-    "name": "Cañihua",
-    "section": "abarrotes",
-    "default_image": ""
-  },
-  {
-    "name": "Maíz blanco",
-    "section": "abarrotes",
-    "default_image": ""
-  },
-  {
-    "name": "Maíz chullpi",
-    "section": "abarrotes",
-    "default_image": ""
-  },
-  {
-    "name": "Trigo",
-    "section": "abarrotes",
-    "default_image": ""
-  },
-  {
-    "name": "Cebada",
-    "section": "abarrotes",
-    "default_image": ""
-  },
-  {
-    "name": "Habas secas",
-    "section": "abarrotes",
-    "default_image": ""
-  },
-  {
-    "name": "Lentejas",
-    "section": "abarrotes",
-    "default_image": ""
-  },
-  {
-    "name": "Frijoles",
-    "section": "abarrotes",
-    "default_image": ""
-  },
-  {
-    "name": "Chuño",
-    "section": "abarrotes",
-    "default_image": ""
-  },
-  {
-    "name": "Moraya",
-    "section": "abarrotes",
-    "default_image": ""
-  },
-  {
-    "name": "Fideos",
-    "section": "abarrotes",
-    "default_image": ""
-  },
-  {
-    "name": "Azúcar",
-    "section": "abarrotes",
-    "default_image": ""
-  },
-  {
-    "name": "Sal",
-    "section": "abarrotes",
-    "default_image": ""
-  },
-  {
-    "name": "Aceite vegetal",
-    "section": "abarrotes",
-    "default_image": ""
-  },
-  {
-    "name": "Lomo de res",
-    "section": "carnes_aves",
-    "default_image": ""
-  },
-  {
-    "name": "Pollo entero",
-    "section": "carnes_aves",
-    "default_image": ""
-  },
-  {
-    "name": "Carne de cerdo",
-    "section": "carnes_aves",
-    "default_image": ""
-  },
-  {
-    "name": "Carne de cordero",
-    "section": "carnes_aves",
-    "default_image": ""
-  },
-  {
-    "name": "Cuy",
-    "section": "carnes_aves",
-    "default_image": ""
-  },
-  {
-    "name": "Menudencia de pollo",
-    "section": "carnes_aves",
-    "default_image": ""
-  },
-  {
-    "name": "Palta",
-    "section": "frutas",
-    "default_image": ""
-  },
-  {
-    "name": "Plátano de isla",
-    "section": "frutas",
-    "default_image": ""
-  },
-  {
-    "name": "Plátano bellaco",
-    "section": "frutas",
-    "default_image": ""
-  },
-  {
-    "name": "Naranja",
-    "section": "frutas",
-    "default_image": ""
-  },
-  {
-    "name": "Mandarina",
-    "section": "frutas",
-    "default_image": ""
-  },
-  {
-    "name": "Manzana",
-    "section": "frutas",
-    "default_image": ""
-  },
-  {
-    "name": "Papaya",
-    "section": "frutas",
-    "default_image": ""
-  },
-  {
-    "name": "Piña",
-    "section": "frutas",
-    "default_image": ""
-  },
-  {
-    "name": "Tuna",
-    "section": "frutas",
-    "default_image": ""
-  },
-  {
-    "name": "Granadilla",
-    "section": "frutas",
-    "default_image": ""
-  },
-  {
-    "name": "Chirimoya",
-    "section": "frutas",
-    "default_image": ""
-  },
-  {
-    "name": "Queso fresco",
-    "section": "quesos_lacteos",
-    "default_image": "catalog/queso-fresco.svg"
-  },
-  {
-    "name": "Queso paria",
-    "section": "quesos_lacteos",
-    "default_image": ""
-  },
-  {
-    "name": "Queso andino",
-    "section": "quesos_lacteos",
-    "default_image": ""
-  },
-  {
-    "name": "Leche fresca",
-    "section": "quesos_lacteos",
-    "default_image": ""
-  },
-  {
-    "name": "Yogurt natural",
-    "section": "quesos_lacteos",
-    "default_image": ""
-  },
-  {
-    "name": "Mantequilla",
-    "section": "quesos_lacteos",
-    "default_image": ""
-  },
-  {
-    "name": "Cebolla roja",
-    "section": "verduras",
-    "default_image": ""
-  },
-  {
-    "name": "Choclo",
-    "section": "verduras",
-    "default_image": "catalog/choclo.svg"
-  },
-  {
-    "name": "Huacatay",
-    "section": "verduras",
-    "default_image": ""
-  },
-  {
-    "name": "Papa amarilla",
-    "section": "verduras",
-    "default_image": "catalog/papa-amarilla.svg"
-  },
-  {
+    "market": "vinocanchon",
+    "stall_number": "Pabellón A - Puesto 12",
     "name": "Papa blanca",
-    "section": "verduras",
-    "default_image": ""
+    "catalog_item": "",
+    "unit_type": "kg",
+    "price": 2.80,
+    "in_stock": true,
+    "image": ""
   },
   {
-    "name": "Papa nativa",
-    "section": "verduras",
-    "default_image": ""
-  },
-  {
-    "name": "Olluco",
-    "section": "verduras",
-    "default_image": ""
-  },
-  {
-    "name": "Oca",
-    "section": "verduras",
-    "default_image": ""
-  },
-  {
-    "name": "Mashua",
-    "section": "verduras",
-    "default_image": ""
-  },
-  {
+    "market": "vinocanchon",
+    "stall_number": "Pabellón A - Puesto 12",
     "name": "Zanahoria",
-    "section": "verduras",
-    "default_image": ""
+    "catalog_item": "Zanahoria",
+    "unit_type": "kg",
+    "price": 2.50,
+    "in_stock": true,
+    "image": ""
   },
   {
+    "market": "vinocanchon",
+    "stall_number": "Pabellón A - Puesto 12",
     "name": "Tomate",
-    "section": "verduras",
-    "default_image": ""
+    "catalog_item": "",
+    "unit_type": "kg",
+    "price": 3.50,
+    "in_stock": true,
+    "image": ""
   },
   {
+    "market": "vinocanchon",
+    "stall_number": "Pabellón A - Puesto 12",
     "name": "Rocoto",
-    "section": "verduras",
-    "default_image": ""
+    "catalog_item": "",
+    "unit_type": "kg",
+    "price": 5.00,
+    "in_stock": true,
+    "image": ""
   },
   {
-    "name": "Ají amarillo",
-    "section": "verduras",
-    "default_image": ""
+    "market": "vinocanchon",
+    "stall_number": "Pabellón A - Puesto 12",
+    "name": "Olluco",
+    "catalog_item": "",
+    "unit_type": "kg",
+    "price": 3.50,
+    "in_stock": true,
+    "image": ""
   },
   {
-    "name": "Arveja",
-    "section": "verduras",
-    "default_image": ""
-  },
-  {
+    "market": "vinocanchon",
+    "stall_number": "Pabellón A - Puesto 12",
     "name": "Haba verde",
-    "section": "verduras",
-    "default_image": ""
+    "catalog_item": "",
+    "unit_type": "kg",
+    "price": 4.00,
+    "in_stock": true,
+    "image": ""
   },
   {
-    "name": "Zapallo",
-    "section": "verduras",
-    "default_image": ""
-  },
-  {
-    "name": "Beterraga",
-    "section": "verduras",
-    "default_image": ""
-  },
-  {
-    "name": "Lechuga",
-    "section": "verduras",
-    "default_image": ""
-  },
-  {
-    "name": "Espinaca",
-    "section": "verduras",
-    "default_image": ""
-  },
-  {
+    "market": "vinocanchon",
+    "stall_number": "Pabellón A - Puesto 12",
     "name": "Culantro",
-    "section": "verduras",
-    "default_image": ""
+    "catalog_item": "",
+    "unit_type": "manojo",
+    "price": 1.00,
+    "in_stock": true,
+    "image": ""
+  },
+  {
+    "market": "vinocanchon",
+    "stall_number": "Pabellón B - Puesto 42",
+    "name": "Carne de cerdo",
+    "catalog_item": "",
+    "unit_type": "kg",
+    "price": 22.00,
+    "in_stock": true,
+    "image": ""
+  },
+  {
+    "market": "vinocanchon",
+    "stall_number": "Pabellón B - Puesto 42",
+    "name": "Carne de cordero",
+    "catalog_item": "",
+    "unit_type": "kg",
+    "price": 28.00,
+    "in_stock": true,
+    "image": ""
+  },
+  {
+    "market": "vinocanchon",
+    "stall_number": "Pabellón B - Puesto 42",
+    "name": "Menudencia de pollo",
+    "catalog_item": "",
+    "unit_type": "kg",
+    "price": 8.00,
+    "in_stock": true,
+    "image": ""
+  },
+  {
+    "market": "vinocanchon",
+    "stall_number": "Pabellón C - Puesto 05",
+    "name": "Queso paria",
+    "catalog_item": "",
+    "unit_type": "kg",
+    "price": 25.00,
+    "in_stock": true,
+    "image": ""
+  },
+  {
+    "market": "vinocanchon",
+    "stall_number": "Pabellón C - Puesto 05",
+    "name": "Yogurt natural",
+    "catalog_item": "",
+    "unit_type": "unidad",
+    "price": 6.00,
+    "in_stock": true,
+    "image": ""
+  },
+  {
+    "market": "wanchaq",
+    "stall_number": "Nave 1 - Puesto 08",
+    "name": "Naranja",
+    "catalog_item": "",
+    "unit_type": "kg",
+    "price": 3.50,
+    "in_stock": true,
+    "image": ""
+  },
+  {
+    "market": "wanchaq",
+    "stall_number": "Nave 1 - Puesto 08",
+    "name": "Mandarina",
+    "catalog_item": "",
+    "unit_type": "kg",
+    "price": 4.00,
+    "in_stock": true,
+    "image": ""
+  },
+  {
+    "market": "wanchaq",
+    "stall_number": "Nave 1 - Puesto 08",
+    "name": "Papaya",
+    "catalog_item": "",
+    "unit_type": "kg",
+    "price": 4.50,
+    "in_stock": true,
+    "image": ""
+  },
+  {
+    "market": "wanchaq",
+    "stall_number": "Nave 1 - Puesto 08",
+    "name": "Piña",
+    "catalog_item": "",
+    "unit_type": "unidad",
+    "price": 6.00,
+    "in_stock": true,
+    "image": ""
+  },
+  {
+    "market": "wanchaq",
+    "stall_number": "Nave 1 - Puesto 08",
+    "name": "Manzana",
+    "catalog_item": "",
+    "unit_type": "kg",
+    "price": 5.00,
+    "in_stock": true,
+    "image": ""
+  },
+  {
+    "market": "wanchaq",
+    "stall_number": "Nave 2 - Puesto 21",
+    "name": "Beterraga",
+    "catalog_item": "",
+    "unit_type": "kg",
+    "price": 2.50,
+    "in_stock": true,
+    "image": ""
+  },
+  {
+    "market": "wanchaq",
+    "stall_number": "Nave 2 - Puesto 21",
+    "name": "Lechuga",
+    "catalog_item": "",
+    "unit_type": "unidad",
+    "price": 2.00,
+    "in_stock": true,
+    "image": ""
+  },
+  {
+    "market": "wanchaq",
+    "stall_number": "Nave 2 - Puesto 21",
+    "name": "Zapallo",
+    "catalog_item": "",
+    "unit_type": "kg",
+    "price": 3.00,
+    "in_stock": true,
+    "image": ""
+  },
+  {
+    "market": "wanchaq",
+    "stall_number": "Nave 2 - Puesto 21",
+    "name": "Arveja verde",
+    "catalog_item": "",
+    "unit_type": "kg",
+    "price": 5.00,
+    "in_stock": true,
+    "image": ""
+  },
+  {
+    "market": "wanchaq",
+    "stall_number": "Nave 3 - Puesto 03",
+    "name": "Kiwicha",
+    "catalog_item": "",
+    "unit_type": "kg",
+    "price": 12.00,
+    "in_stock": true,
+    "image": ""
+  },
+  {
+    "market": "wanchaq",
+    "stall_number": "Nave 3 - Puesto 03",
+    "name": "Cañihua",
+    "catalog_item": "",
+    "unit_type": "kg",
+    "price": 14.00,
+    "in_stock": true,
+    "image": ""
+  },
+  {
+    "market": "wanchaq",
+    "stall_number": "Nave 3 - Puesto 03",
+    "name": "Maíz chullpi",
+    "catalog_item": "",
+    "unit_type": "kg",
+    "price": 8.00,
+    "in_stock": true,
+    "image": ""
+  },
+  {
+    "market": "wanchaq",
+    "stall_number": "Nave 3 - Puesto 03",
+    "name": "Lentejas",
+    "catalog_item": "",
+    "unit_type": "kg",
+    "price": 7.00,
+    "in_stock": true,
+    "image": ""
+  },
+  {
+    "market": "wanchaq",
+    "stall_number": "Nave 3 - Puesto 03",
+    "name": "Chuño",
+    "catalog_item": "",
+    "unit_type": "kg",
+    "price": 9.00,
+    "in_stock": true,
+    "image": ""
   }
 ]
